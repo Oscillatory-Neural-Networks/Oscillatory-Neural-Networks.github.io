@@ -520,6 +520,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-text {
   line-height: 26px;
   margin-bottom: 15px;
+  text-align: justify;
 }
 
 #about .about-text:last-child {
