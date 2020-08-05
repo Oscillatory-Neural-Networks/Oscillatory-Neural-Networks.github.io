@@ -13,6 +13,11 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+img {
+  border-radius: 15px;
+
+}
+
 a {
   color: #03C4EB;
   transition: 0.5s;
@@ -628,6 +633,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #portfolio .portfolio-item {
+  border-radius: 15px;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
