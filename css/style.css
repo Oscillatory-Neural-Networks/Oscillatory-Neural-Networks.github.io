@@ -13,6 +13,11 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.pubs{
+  margin: auto;
+  /* margin-inline: 15px; */
+
+}
 img {
   border-radius: 15px;
 
@@ -750,8 +755,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member {
-  max-width : 70%;
-  margin :auto;
+  /* max-width : 70%; */
+  /* margin :auto; */
   text-align: center;
   margin-bottom: 20px;
 }
