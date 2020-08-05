@@ -755,7 +755,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member {
-  /* max-width : 70%; */
+  max-width : 500px;
   /* margin :auto; */
   text-align: center;
   margin-bottom: 20px;
