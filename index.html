@@ -1,286 +1,538 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Oscillatory Neural Networks</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="" name="keywords" />
+        <meta content="" name="description" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Oscillatory Neural Networks</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+        <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+        <meta property="og:title" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:site_name" content="" />
+        <meta property="og:description" content="" />
 
-  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
-  <meta property="og:title" content="">
-  <meta property="og:image" content="">
-  <meta property="og:url" content="">
-  <meta property="og:site_name" content="">
-  <meta property="og:description" content="">
+        <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="" />
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:description" content="" />
+        <meta name="twitter:image" content="" />
 
-  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="">
-  <meta name="twitter:title" content="">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:image" content="">
+        <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+        <link href="favicon.ico" rel="shortcut icon" />
 
-  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
-  <link href="favicon.ico" rel="shortcut icon">
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+            rel="stylesheet"
+        />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+        <!-- Bootstrap CSS File -->
+        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Libraries CSS Files -->
+        <link
+            href="lib/font-awesome/css/font-awesome.min.css"
+            rel="stylesheet"
+        />
+        <link href="lib/animate-css/animate.min.css" rel="stylesheet" />
 
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+        <!-- Main Stylesheet File -->
+        <link href="css/style.css" rel="stylesheet" />
 
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
+        <!-- =======================================================
     Theme Name: Imperial
     Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
     Author: BootstrapMade.com
     Author URL: https://bootstrapmade.com
   ======================================================= -->
-</head>
+    </head>
 
-<body>
-  <div id="preloader"></div>
+    <body>
+        <div id="preloader"></div>
 
-  <!--==========================
+        <!--==========================
   Hero Section
   ============================-->
-  <section id="hero">
-    <div class="hero-container">
-      <div class="wow fadeIn">
-        <div class="hero-logo">
-          <img class="" src="img/logo_white_1.png" alt="logo" width=200px>
-        </div>
+        <section id="hero">
+            <div class="hero-container">
+                <div class="wow fadeIn">
+                    <div class="hero-logo">
+                        <img
+                            class=""
+                            src="img/logo_white_1.png"
+                            alt="logo"
+                            width="200px"
+                        />
+                    </div>
 
-        <h1>OSCILLATORY NEURAL NETWORKS</h1>
-        <!-- <h2>We work on <span class="rotating">oscillators., , topic 3</span></h2> -->
-        <div class="actions">
-          <a href="#about" class="btn-get-started">About Us</a>
-          <a href="#contact" class="btn-services">Contact Us</a>
-        </div>
-      </div>
-    </div>
-  </section>
+                    <h1>OSCILLATORY NEURAL NETWORKS</h1>
+                    <!-- <h2>We work on <span class="rotating">oscillators., , topic 3</span></h2> -->
+                    <div class="actions">
+                        <a href="#about" class="btn-get-started">About Us</a>
+                        <a href="#contact" class="btn-services">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!--==========================
+        <!--==========================
   Header Section
   ============================-->
-  <header id="header">
-    <div class="container">
+        <header id="header">
+            <div class="container">
+                <div id="logo" class="pull-left">
+                    <a href="#hero"
+                        ><img src="img/logo_white_1.png" alt="" title="" />""
+                        <span style="color: white; padding: 0.3em"
+                            >OSCILLATORY NEURAL NETWORKS</span
+                        ></a
+                    >
+                    <!-- Uncomment below if you prefer to use a text image -->
+                    <!--<h1><a href="#hero">Header 1</a></h1>-->
+                </div>
 
-      <div id="logo" class="pull-left">
-        <a href="#hero"><img src="img/logo_white_1.png" alt="" title="" /></img> <span style="color:white; padding:0.3em">OSCILLATORY NEURAL NETWORKS</span></a>
-        <!-- Uncomment below if you prefer to use a text image -->
-        <!--<h1><a href="#hero">Header 1</a></h1>-->
-      </div>
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li class="menu-active"><a href="#hero">Home</a></li>
+                        <ul>
+                            Quick Links
+                        </ul>
 
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="#hero">Home</a></li>
-          <ul>Quick Links</ul>
+                        <li>
+                            <a
+                                href="https://biotech.iitm.ac.in/Faculty/CNS_LAB/home.html"
+                                >CNS Lab, IIT Madras</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://sites.google.com/view/balanceandgait/current-projects"
+                                >Balance and Gait</a
+                            >
+                        </li>
 
-          <li><a href="https://biotech.iitm.ac.in/Faculty/CNS_LAB/home.html">CNS Lab, IIT Madras</a></li>
-          <li><a href="https://sites.google.com/view/balanceandgait/current-projects">Balance and Gait</a></li>
-          
+                        <!-- <li><a href="#about">About Us</a></li> -->
+                        <li><a href="#projects">Current Projects</a></li>
+                        <li><a href="#portfolio">Publications</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <!-- #nav-menu-container -->
+            </div>
+        </header>
+        <!-- #header -->
 
-          <!-- <li><a href="#about">About Us</a></li> -->
-          <li><a href="#projects">Current Projects</a></li>
-          <li><a href="#portfolio">Publications</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
-      </nav>
-      <!-- #nav-menu-container -->
-    </div>
-  </header>
-  <!-- #header -->
-
-  <!--==========================
+        <!--==========================
   About Section
   ============================-->
-  <section id="about">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="section-title">About Us</h3>
-          <div class="section-title-divider"></div><br>
-          <!-- <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p> -->
-        </div>
-      </div>
-    </div>
-    <div class="container about-container wow fadeInUp">
-      <div class="row">
-        <p class="about-text" style="padding:1em">
-          Although the electrical activity of a single neuron seems like train of spikes, the activity of a population of neurons at various scales measured in terms of LFP, BOLD, fMRI or EEG signals looks like continuous and periodic oscillations of various frequency bands (delta, theta, gamma, alpha). The stable limit cycle attractor of nonlinear dynamical system can universally be adapted to model electrical activity from single cell level to the cumulative of population of neurons at various scales.<br><br>
-        </p>
-        <div class="col-lg-6 about-img">
-          <img src="img/lab.jpg" alt="">
-        </div>
+        <section id="about">
+            <div class="container wow fadeInUp">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="section-title">About Us</h3>
+                        <div class="section-title-divider"></div>
+                        <br />
+                        <!-- <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="container about-container wow fadeInUp">
+                <div class="row">
+                    <p class="about-text" style="padding: 1em">
+                        Although the electrical activity of a single neuron
+                        seems like train of spikes, the activity of a population
+                        of neurons at various scales measured in terms of LFP,
+                        BOLD, fMRI or EEG signals looks like continuous and
+                        periodic oscillations of various frequency bands (delta,
+                        theta, gamma, alpha). The stable limit cycle attractor
+                        of nonlinear dynamical system can universally be adapted
+                        to model electrical activity from single cell level to
+                        the cumulative of population of neurons at various
+                        scales.<br /><br />
+                    </p>
+                    <div class="col-sm-6 about-img">
+                        <img src="img/lab.jpg" alt="" />
+                    </div>
 
-        <div class="col-md-6 about-content">
+                    <div class="col-md-6 about-content">
+                        <h2 class="about-title">Objectives</h2>
+                        <ul>
+                            <li class="about-text">
+                                Primary objective is to propose generalized
+                                oscillatory neural network model capable of
+                                function approximation, classification,
+                                predictive modelling and designing controllers.
+                            </li>
 
-          <h2 class="about-title">Objectives</h2>
-          <ul>
-            <li class="about-text">Primary objective is to propose generalized oscillatory neural network model capable of function approximation, classification, predictive modelling and designing controllers.
-            </li>
+                            <li class="about-text">
+                                Propose a model for primate auditory cortex
+                                depicting tonotopic map architecture.
+                            </li>
 
-            <li class="about-text">Propose a model for primate auditory cortex depicting tonotopic map architecture.
-            </li>
+                            <li class="about-text">
+                                As this kind of network is capable of Fourier
+                                decomposing any time series signal, exploring
+                                the scope of other signal processing
+                                capabilities like filtering.
+                            </li>
 
-            <li class="about-text">As this kind of network is capable of Fourier decomposing any time series signal, exploring the scope of other signal processing capabilities like filtering.
-            </li>
+                            <li class="about-text">
+                                Modelling an oscillatory feed forward neural
+                                network to design the controller for gaiting
+                                rhythm generation as the muscle activation
+                                measured in terms of EMG signal is nearly
+                                periodic in nature during gait.
+                            </li>
 
-            <li class="about-text">Modelling an oscillatory feed forward neural network to design the controller for gaiting rhythm generation as the muscle activation measured in terms of EMG signal is nearly periodic in nature during gait.
-            </li>
+                            <li class="about-text">
+                                Experimentally recorded time series signals like
+                                EEG/ EMG/ fMRI signal classification.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <li class="about-text">Experimentally recorded time series signals like EEG/ EMG/ fMRI signal classification.
-            </li>
-
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--==========================
+        <!--==========================
   Services Section
   ============================-->
-  <section id="projects">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="section-title">Current Projects/Problems</h3>
-          <div class="section-title-divider"></div>
-          <p class="section-description">Current research works and projects</p>
-        </div>
-      </div>
+        <section id="projects">
+            <div class="container wow fadeInUp">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="section-title">Current Projects/Problems</h3>
+                        <div class="section-title-divider"></div>
+                        <p class="section-description">
+                            Current research works and projects
+                        </p>
+                    </div>
+                </div>
 
-      <div class="row">
-        <div class="col-md-4 service-item">
-          <div class="service-icon"></div>
-          <h4 class="service-title"><a href="">Power Coupling</a></h4>
-          <p class="service-description">Investigating phase encoding capability of network of Hopf oscillators using special kind of coupling strategy called “power coupling”.</p>
-        </div>
+                <div class="row">
+                    <div class="col-md-4 service-item">
+                        <div class="service-icon"></div>
+                        <h4 class="service-title">
+                            <a href="">Power Coupling</a>
+                        </h4>
+                        <p class="service-description">
+                            Investigating phase encoding capability of network
+                            of Hopf oscillators using special kind of coupling
+                            strategy called “power coupling”.
+                        </p>
+                    </div>
 
-        <div class="col-md-4 service-item">
-          <div class="service-icon"></div>
-          <h4 class="service-title"><a href="">Encoding and Prediction using Hopf Oscillators</a></h4>
-          <p class="service-description">Exploring the various regimes of Hopf oscillators to solve problems like encoding or predictive modelling.</p>
-        </div>
+                    <div class="col-md-4 service-item">
+                        <div class="service-icon"></div>
+                        <h4 class="service-title">
+                            <a href=""
+                                >Encoding and Prediction using Hopf
+                                Oscillators</a
+                            >
+                        </h4>
+                        <p class="service-description">
+                            Exploring the various regimes of Hopf oscillators to
+                            solve problems like encoding or predictive
+                            modelling.
+                        </p>
+                    </div>
 
-        <div class="col-md-4 service-item">
-          <div class="service-icon"></div>
-          <h4 class="service-title"><a href="">Initialization for retrieving time series signal</a></h4>
-          <p class="service-description">Addressing initialization problem while reconstructing/retrieving stored time series signal from a Hopf field like oscillatory memory network.</p>
-        </div>
+                    <div class="col-md-4 service-item">
+                        <div class="service-icon"></div>
+                        <h4 class="service-title">
+                            <a href=""
+                                >Initialization for retrieving time series
+                                signal</a
+                            >
+                        </h4>
+                        <p class="service-description">
+                            Addressing initialization problem while
+                            reconstructing/retrieving stored time series signal
+                            from a Hopf field like oscillatory memory network.
+                        </p>
+                    </div>
 
-        <div class="col-md-4 service-item">
-          <div class="service-icon"></div>
-          <h4 class="service-title"><a href="">Oscillatory LISSOM and CNN model</a></h4>
-          <p class="service-description">Constructing oscillatory neural network model equivalent for LISSOM and CNN.</p>
-        </div>
+                    <div class="col-md-4 service-item">
+                        <div class="service-icon"></div>
+                        <h4 class="service-title">
+                            <a href="">Oscillatory LISSOM and CNN model</a>
+                        </h4>
+                        <p class="service-description">
+                            Constructing oscillatory neural network model
+                            equivalent for LISSOM and CNN.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="container wow fadeInUp">
+                <center>
+                    <img
+                        class="service-item"
+                        src="img/sayooj_pottan.png"
+                        style="width: 60%"
+                    />
+                </center>
+            </div>
+            <br />
+        </section>
 
-      </div>
-    </div>
-    <br>
-    <div class="container wow fadeInUp">
-      <center>
-       <img class = "service-item" src = "img/sayooj_pottan.png" style="width:60%;">
-      </center>
-    </div>
-    <br>
-  </section>
-
-  <!--==========================
+        <!--==========================
   Subscrbe Section
   ============================-->
-  <section id="subscribe">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-8">
-          <h3 class="subscribe-title">Contact Us</h3>
-          <p class="subscribe-text">Contact us for details, collaborations, internships etc</p>
-        </div>
-        <div class="col-md-4 subscribe-btn-container">
-          <a class="subscribe-btn" href="#contact">Contact Us</a>
-        </div>
-      </div>
-    </div>
-  </section>
+        <section id="subscribe">
+            <div class="container wow fadeInUp">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 class="subscribe-title">Contact Us</h3>
+                        <p class="subscribe-text">
+                            Contact us for details, collaborations, internships
+                            etc
+                        </p>
+                    </div>
+                    <div class="col-md-4 subscribe-btn-container">
+                        <a class="subscribe-btn" href="#contact">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!--==========================
+        <!--==========================
   Porfolio Section
   ============================-->
-  <section id="portfolio">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="section-title">Publications</h3>
-          <div class="section-title-divider"></div>
-          <p class="section-description">Some selected recent publications</p>
-        </div>
-      </div>
+        <section id="portfolio">
+            <div class="container wow fadeInUp">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="section-title">Publications</h3>
+                        <div class="section-title-divider"></div>
+                        <p class="section-description">
+                            Some selected recent publications
+                        </p>
+                    </div>
+                </div>
 
-      <!-- <p class="service-description">Check back soon :)</p> -->
+                <!-- <p class="service-description">Check back soon :)</p> -->
 
-      <div class="row justify-content-center">
-        <div class="col-md-3 pubs">
-          <a class="portfolio-item" style="background-image: url(img/brain_modes_lite.png);" href="img/brain_modes.png">
-            <div class="details">
-              <h4>View Poster</h4>
-              <span>Redirect</span>
+                <div class="row justify-content-center">
+                    <!-- 1 -->
+                    <div class="col-md-3 pubs">
+                        <a
+                            target="_blank"
+                            class="portfolio-item"
+                            style="background-image: url(img/brainwaves.jpg)"
+                            href="http://doi.org/10.12751/nncn.bc2021.p032"
+                        >
+                            <div class="details">
+                                <h4>View Paper</h4>
+                                <span>Redirect</span>
+                            </div>
+                        </a>
+                        <div>
+                            <h4 class="service-title">
+                                <a
+                                    >Modeling multi-channel Electroencephalogram
+                                    (EEG) signals for multiple sleep stages
+                                    using an oscillatory neural network.</a
+                                >
+                            </h4>
+                            <b>
+                                Ghosh S, Biswas D, Vijayan S, Chakravarthy. V S
+                                (2021)
+                            </b>
+                            <p>
+                                Bernstein Conference 2021.<br />
+                                doi:
+                                <a
+                                    target="_blank"
+                                    href="http://doi.org/10.12751/nncn.bc2021.p032"
+                                    >10.12751/nncn.bc2021.p032</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="col-md-3 pubs">
+                        <a
+                            target="_blank"
+                            class="portfolio-item"
+                            style="background-image: url(img/brainwaves.jpg)"
+                            href="https://doi.org/10.3389/fncom.2021.551111"
+                        >
+                            <div class="details">
+                                <h4>View Paper</h4>
+                                <span>Redirect</span>
+                            </div>
+                        </a>
+                        <div>
+                            <h4 class="service-title">
+                                <a
+                                    >A Complex-Valued Oscillatory Neural Network
+                                    for Storage and Retrieval of
+                                    Multidimensional Aperiodic Signals.</a
+                                >
+                            </h4>
+                            <b>
+                                Biswas, D., Pallikkulath, S., and Chakravarthy,
+                                V. S. (2021)
+                            </b>
+                            <p>
+                                Front. Comput. Neurosci. 15, 1–24. <br />
+                                doi:
+                                <a
+                                    target="_blank"
+                                    href="https://doi.org/10.3389/fncom.2021.551111"
+                                    >10.3389/fncom.2021.551111
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="col-md-3 pubs">
+                        <a
+                            target="_blank"
+                            class="portfolio-item"
+                            style="background-image: url(img/brainwaves.jpg)"
+                            href="http://doi.org/10.12751/nncn.bc2020.0105"
+                        >
+                            <div class="details">
+                                <h4>View Paper</h4>
+                                <span>Redirect</span>
+                            </div>
+                        </a>
+                        <div>
+                            <h4 class="service-title">
+                                <a
+                                    >A hybrid network with a reservoir of
+                                    complex nonlinear oscillators to model the
+                                    storage of short-term memory.</a
+                                >
+                            </h4>
+                            <b>
+                                Krishnamurthy R, Biswas D, Kanagamani T,
+                                Chakravarthy VS (2020)
+                            </b>
+                            <p>
+                                Bernstein Conference 2020.<br />
+                                doi:
+                                <a
+                                    target="_blank"
+                                    href="http://doi.org/10.12751/nncn.bc2020.0105"
+                                    >10.12751/nncn.bc2020.0105</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+
+                    <div class="col-md-3 pubs">
+                        <a
+                            target="_blank"
+                            class="portfolio-item"
+                            style="
+                                background-image: url(img/brain_modes_lite.png);
+                            "
+                            href="img/brain_modes.png"
+                        >
+                            <div class="details">
+                                <h4>View Poster</h4>
+                                <span>Redirect</span>
+                            </div>
+                        </a>
+                        <div>
+                            <h4 class="service-title">
+                                <a
+                                    >Modelling of Electro Encephalogram Data
+                                    Using a Network of Complex Valued Neural
+                                    Oscillators.</a
+                                >
+                            </h4>
+                            <b>
+                                Biswas, D., Pallikkulath, S., Tasrode, A., and
+                                Chakravarthy, V. S. (2021)
+                            </b>
+                            <p>
+                              Brain Modes Conference 2020<br />
+                                
+                                <a target="_blank" href="img/brain_modes.png"
+                                    >View Poster</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+         
+                    <div class="col-md-3 pubs">
+                        <a
+                            target="_blank"
+                            class="portfolio-item"
+                            style="background-image: url(img/brainwaves.jpg)"
+                            href="https://doi.org/10.3389/fncom.2018.00052"
+                        >
+                            <div class="details">
+                                <h4>View Paper</h4>
+                                <span>Redirect</span>
+                            </div>
+                        </a>
+                        <div>
+                            <h4 class="service-title">
+                                <a
+                                    >An Oscillatory Neural Autoencoder Based on
+                                    Frequency Modulation and Multiplexing.
+                                </a>
+                            </h4>
+                            <b>
+                              Soman, K., Muralidharan, V., Chakravarthy, V. S.
+                            </b>
+                            <p>
+                              Front. Comput. Neurosci. 2018.<br />
+                                doi:
+                                <a target="_blank" href="https://doi.org/10.3389/fncom.2018.00052"
+                                    >10.3389/fncom.2018.00052</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-md-3 pubs">
+                        <a
+                            class="portfolio-item"
+                            style="background-image: url(img/brainwaves.jpg)"
+                            href="https://doi.org/10.3389/fncom.2018.00052"
+                        >
+                            <div class="details">
+                                <h4>View Paper</h4>
+                                <span>Redirect</span>
+                            </div>
+                        </a>
+                        <div>
+                            <h4 class="service-title">
+                                <a
+                                    >An Oscillatory Neural Autoencoder Based on
+                                    Frequency Modulation and Multiplexing.</a
+                                >
+                            </h4>
+                            <!-- Some good things about the paper -->
+                        </div>
+                    </div> -->
+                </div>
             </div>
-          </a>
-          <div>
-            <h4 class="service-title"><a>Modelling of Electro Encephalogram Data Using a Network of Complex Valued Neural Oscillators.</a></h4>
-            <!-- Some good things about the paper -->
-          </div>
-        </div> 
-        
-        <div class="col-md-3 pubs">
-          <a class="portfolio-item" style="background-image: url(img/brainwaves.jpg);" href="https://www.biorxiv.org/content/10.1101/2020.03.28.013292v1">
-            <div class="details">
-              <h4>View Paper</h4>
-              <span>Redirect</span>
-            </div>
-          </a>
-          <div>
-            <h4 class="service-title"><a>A Complex-valued Oscillatory Neural Network for Storage and Retrieval of Multichannel Electroencephalogram Signals.</a></h4>
-            <!-- Some good things about the paper -->
-          </div>
-        </div> 
+        </section>
 
-        <div class="col-md-3 pubs">
-          <a class="portfolio-item" style="background-image: url(img/brainwaves.jpg);" href="https://pdfs.semanticscholar.org/0216/60297056b96ad3182eb0c3da17ebbe1f4c4f.pdf">
-            <div class="details">
-              <h4>View Paper</h4>
-              <span>Redirect</span>
-            </div>
-          </a>
-          <div>
-            <h4 class="service-title"><a>An Oscillatory Neural Autoencoder
-              Based on Frequency Modulation and
-              Multiplexing.</a></h4>
-            <!-- Some good things about the paper -->
-          </div>
-        </div> 
-
-
-      </div>
-    </div>
-  </section>
-
-  <!--==========================
+        <!--==========================
   Testimonials Section
   ============================-->
-  <!-- <section id="testimonials">
+        <!-- <section id="testimonials">
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
@@ -323,65 +575,85 @@
     </div>
   </section> -->
 
-  <!--==========================
+        <!--==========================
   Team Section
   ============================-->
-  <section id="team">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="section-title">Our Team</h3>
-          <div class="section-title-divider"></div>
-          <p class="section-description">Our team members</p>
-        </div>
-      </div>
-      
-      <div class="row justify-content-center" >
-        <div class="col-md-4  ">
-          <div class="member">
-            <div class="pic"><img src="img/team-1.jpg" alt=""></div>
-            <h4>Dipayan Biswas, PhD</h4>
-            <!-- <span>Dipayan biwas is the king of the world, he knows everything about everything. Nothing happens in the lab without him knowing</span> -->
-            <div class="social">
-              <a href="mailto:subhodeep555@gmail.com"><i class="fa fa-envelope"></i> subhodeep555 [at] gmail [dot] com</a>
-            </div>
-          </div>
-        </div>
+        <section id="team">
+            <div class="container wow fadeInUp">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="section-title">Our Team</h3>
+                        <div class="section-title-divider"></div>
+                        <p class="section-description">Our team members</p>
+                    </div>
+                </div>
 
-        <div class="col-md-4">
-          <div class="member">
-            <div class="pic"><img src="img/team-2.jpg" alt=""></div>
-            <h4>Sooryakiran, Undergrad</h4>
-            <!-- <span>I am the awesone, I am the sooper</span> -->
-            <div class="social">
-              <a href="mailto:sooryakiran@smail.iitm.ac.in"><i class="fa fa-envelope"></i> sooryakiran [at] smail [dot] iitm [dot] ac [dot] in</a>
-            </div>
-          </div>
-        </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="member">
+                            <div class="pic">
+                                <img src="img/team-1.jpg" alt="" />
+                            </div>
+                            <h4>Dipayan Biswas, PhD</h4>
+                            <!-- <span>Dipayan biwas is the king of the world, he knows everything about everything. Nothing happens in the lab without him knowing</span> -->
+                            <div class="social">
+                                <a href="mailto:subhodeep555@gmail.com"
+                                    ><i class="fa fa-envelope"></i> subhodeep555
+                                    [at] gmail [dot] com</a
+                                >
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="col-md-4">
-          <div class="member">
-            <div class="pic"><img src="img/team-3.jpg" alt=""></div>
-            <h4>Asit Tarsode, Undergrad</h4>
-            <!-- <span>I am the awesone, I am the sooper</span> -->
-            <div class="social">
-              <a href="mailto:me15b057@smail.iitm.ac.in"><i class="fa fa-envelope"></i> me15b057 [at] smail [dot] iitm [dot] ac [dot] in</a>
-            </div>
-          </div>
-        </div>
+                    <div class="col-md-4">
+                        <div class="member">
+                            <div class="pic">
+                                <img src="img/team-2.jpg" alt="" />
+                            </div>
+                            <h4>Sooryakiran, Undergrad</h4>
+                            <!-- <span>I am the awesone, I am the sooper</span> -->
+                            <div class="social">
+                                <a href="mailto:sooryakiran@smail.iitm.ac.in"
+                                    ><i class="fa fa-envelope"></i> sooryakiran
+                                    [at] smail [dot] iitm [dot] ac [dot] in</a
+                                >
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="col-md-4">
-          <div class="member">
-            <div class="pic"><img src="img/shreyas.jpg" alt=""></div>
-            <h4>Shreyas Sandilya, Undergrad</h4>
-            <!-- <span>I am the awesone, I am the sooper</span> -->
-            <div class="social">
-              <a href="mailto:ed16b029@smail.iitm.ac.in"><i class="fa fa-envelope"></i> ed16b029 [at] smail [dot] iitm [dot] ac [dot] in</a>
-            </div>
-          </div>
-        </div>
+                    <div class="col-md-4">
+                        <div class="member">
+                            <div class="pic">
+                                <img src="img/team-3.jpg" alt="" />
+                            </div>
+                            <h4>Asit Tarsode, Undergrad</h4>
+                            <!-- <span>I am the awesone, I am the sooper</span> -->
+                            <div class="social">
+                                <a href="mailto:me15b057@smail.iitm.ac.in"
+                                    ><i class="fa fa-envelope"></i> me15b057
+                                    [at] smail [dot] iitm [dot] ac [dot] in</a
+                                >
+                            </div>
+                        </div>
+                    </div>
 
-        <!-- <div class="col-md-3">
+                    <div class="col-md-4">
+                        <div class="member">
+                            <div class="pic">
+                                <img src="img/shreyas.jpg" alt="" />
+                            </div>
+                            <h4>Shreyas Sandilya, Undergrad</h4>
+                            <!-- <span>I am the awesone, I am the sooper</span> -->
+                            <div class="social">
+                                <a href="mailto:ed16b029@smail.iitm.ac.in"
+                                    ><i class="fa fa-envelope"></i> ed16b029
+                                    [at] smail [dot] iitm [dot] ac [dot] in</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-md-3">
           <div class="member">
             <div class="pic"><img src="img/team-4.jpg" alt=""></div>
             <h4>Jayaram Reddy, Undergrad</h4>
@@ -391,49 +663,50 @@
             </div>
           </div>
         </div> -->
+                </div>
+            </div>
+        </section>
 
-      </div>
-   
-    </div>
-  </section>
-
-  <!--==========================
+        <!--==========================
   Contact Section
   ============================-->
-  <section id="contact">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="section-title">Contact Us</h3>
-          <div class="section-title-divider"></div>
-          <p class="section-description">Feel free to reach out to us.</p>
-        </div>
-      </div>
+        <section id="contact">
+            <div class="container wow fadeInUp">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="section-title">Contact Us</h3>
+                        <div class="section-title-divider"></div>
+                        <p class="section-description">
+                            Feel free to reach out to us.
+                        </p>
+                    </div>
+                </div>
 
-      <div class="row">
-        <div class="col-md-3 col-md-push-2">
-          <div class="info">
-            <div>
-              <i class="fa fa-map-marker"></i>
-              <p>Computational Neuroscince Lab<br>IIT Madras, Chennai 600036</p>
-            </div>
+                <div class="row">
+                    <div class="col-md-3 col-md-push-2">
+                        <div class="info">
+                            <div>
+                                <i class="fa fa-map-marker"></i>
+                                <p>
+                                    Computational Neuroscince Lab<br />IIT
+                                    Madras, Chennai 600036
+                                </p>
+                            </div>
 
-            <div>
-              <i class="fa fa-envelope"></i>
-              <p>subhodeep555@gmail.com</p>
-            </div>
+                            <div>
+                                <i class="fa fa-envelope"></i>
+                                <p>subhodeep555@gmail.com</p>
+                            </div>
 
-            <div>
-              <i class="fa fa-phone"></i>
-              <p>+91 779 726 6960</p>
-            </div>
+                            <div>
+                                <i class="fa fa-phone"></i>
+                                <p>+91 779 726 6960</p>
+                            </div>
+                        </div>
+                    </div>
 
-          </div>
-        </div>
-
-        <div class="col-md-5 col-md-push-2">
-
-          <!-- <div class="form">
+                    <div class="col-md-5 col-md-push-2">
+                        <!-- <div class="form">
             <div id="sendmessage">Your message has been sent. Thank you!</div>
             <div id="errormessage"></div>
             <form action="" method="post" role="form" class="contactForm">
@@ -456,52 +729,51 @@
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div> -->
-        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      </div>
-    </div>
-  </section>
-
-  <!--==========================
+        <!--==========================
   Footer
 ============================-->
-  <footer id="footer">
-    <div class="container" style="display:none">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="credits">
-            <!--
+        <footer id="footer">
+            <div class="container" style="display: none">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="credits">
+                            <!--
               All the links in the footer should remain intact.
               You can delete the links only if you purchased the pro version.
               Licensing information: https://bootstrapmade.com/license/
               Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
             -->
-            Theme Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- #footer -->
+                            Theme Designed by
+                            <a href="https://bootstrapmade.com/"
+                                >BootstrapMade</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- #footer -->
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-  <!-- Required JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/morphext/morphext.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/stickyjs/sticky.js"></script>
-  <script src="lib/easing/easing.js"></script>
+        <!-- Required JavaScript Libraries -->
+        <script src="lib/jquery/jquery.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="lib/superfish/hoverIntent.js"></script>
+        <script src="lib/superfish/superfish.min.js"></script>
+        <script src="lib/morphext/morphext.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/stickyjs/sticky.js"></script>
+        <script src="lib/easing/easing.js"></script>
 
-  <!-- Template Specisifc Custom Javascript File -->
-  <script src="js/custom.js"></script>
+        <!-- Template Specisifc Custom Javascript File -->
+        <script src="js/custom.js"></script>
 
-  <script src="contactform/contactform.js"></script>
-
-
-</body>
-
+        <script src="contactform/contactform.js"></script>
+    </body>
 </html>

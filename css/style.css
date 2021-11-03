@@ -18,10 +18,11 @@ body {
   /* margin-inline: 15px; */
 
 }
+
 img {
   border-radius: 15px;
-
 }
+
 
 a {
   color: #03C4EB;
@@ -505,6 +506,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-img img {
   max-width: 100%;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 3em;
 }
 
 @media (max-width: 768px) {
@@ -513,7 +517,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
   #about .about-img img {
     margin-left: 0;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -702,11 +706,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 #testimonials .profile .pic {
   border-radius: 50%;
   border: 6px solid #fff;
-  margin-bottom: 15px;
+  padding-bottom: 15px;
   overflow: hidden;
   height: 260px;
   width: 260px;
 }
+
+
+
+.pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
 
 #testimonials .profile .pic img {
   max-width: 100%;
@@ -764,7 +779,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #team .member .pic {
   margin-bottom: 15px;
   overflow: hidden;
-  height: 260px;
+  height: 360px;
 }
 
 #team .member .pic img {
